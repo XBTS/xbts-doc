@@ -1,0 +1,148 @@
+/*
+Copyright 2008-2013 Concur Technologies, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may
+not use this file except in compliance with the License. You may obtain
+a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+*/
+
+
+////////////////////////////////////////////////////////////////////////////////
+// CUSTOMIZE SLATE
+////////////////////////////////////////////////////////////////////////////////
+// Use these settings to help adjust the appearance of Slate
+
+// THEME COLORS
+$primary-color: #357070;
+
+
+
+
+// BACKGROUND COLORS
+////////////////////
+$nav-bg: #f4f4f4 !default;
+
+$lang-select-bg: #17191B !default;
+$examples-bg: $lang-select-bg*1.55 !default;
+$lang-select-pressed-bg: $examples-bg*.9  !default; // color of language tab bg when mouse is pressed
+$code-bg: $lang-select-bg*1.25 !default;
+$code-annotation-bg: $examples-bg !default;
+
+$nav-subitem-bg: #f4f4f4 !default;
+$nav-active-bg: #d1d1d1 !default;
+$nav-active-parent-bg: $primary-color !default; // parent links of the current section
+$lang-select-border: #000 !default;
+$lang-select-active-bg: $primary-color !default; // feel free to change this to blue or something
+$lang-select-pressed-bg: $examples-bg  !default; // color of language tab bg when mouse is pressed
+$main-bg: #fff !default;
+$aside-notice-bg: $main-bg !default;
+$aside-warning-bg: #c97a7e !default;
+$aside-success-bg: #6ac174 !default;
+$search-notice-bg: $main-bg !default;
+
+
+// TEXT COLORS
+////////////////////
+$main-text: #4c555a !default; // main content text color
+$nav-text: #4c555a !default;
+$nav-active-text: #212427 !default;
+$nav-active-parent-text: #ffffff !default; // parent links of the current section
+$lang-select-text: #cacaca !default; // color of unselected language tab text
+$lang-select-active-text: #f4f4f4 !default; // color of selected language tab text
+$lang-select-pressed-text: $lang-select-text !default; // color of language tab text when mouse is pressed
+$url-text: $primary-color;
+
+// SIZES
+////////////////////
+$nav-width: 230px !default; // width of the navbar
+$examples-width: 50% !default; // portion of the screen taken up by code examples
+$logo-margin: 0px !default; // margin below logo
+$main-padding: 9px !default; // padding to left and right of content & examples
+$nav-padding: 15px !default; // padding to left and right of navbar
+$nav-v-padding: 10px !default; // padding used vertically around search boxes and results
+$nav-parent-indent: 35px;
+$nav-indent: 30px !default; // extra padding for ToC subitems
+$code-annotation-padding: 13px !default; // padding inside code annotations
+$h1-margin-bottom: 21px !default; // padding under the largest header tags
+$tablet-width: 930px !default; // min width before reverting to tablet size
+$phone-width: $tablet-width - $nav-width !default; // min width before reverting to mobile size
+$nav-text-size: 1.0rem;
+$nav-sub-text-size: .9rem;
+$lang-text-size: 14px;
+$lang-border-radius: 10px;
+
+// FONTS
+////////////////////
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+  url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+  url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+  url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+
+}
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url('../fonts/FiraCode-Regular.eot');
+  src: url('../fonts/FiraCode-Regular.woff2') format('woff2'),
+  url('../fonts/FiraCode-Regular.woff') format('woff'),
+  url('../fonts/FiraCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque-Regular';
+  src: url('../fonts/GalanoGrotesque-Regular-webfont.woff2') format('woff2'),
+  url('../fonts/GalanoGrotesque-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+%default-font {
+  font-family: 'GalanoGrotesque-Regular','open_sansregular',Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+%header-font {
+  @extend %default-font;
+}
+
+%code-font {
+  font-family: 'FiraCode', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+
+// OTHER
+////////////////////
+$nav-footer-border-color: #666 !default;
+$search-box-border-color: #666 !default;
+
+
+////////////////////////////////////////////////////////////////////////////////
+// INTERNAL
+////////////////////////////////////////////////////////////////////////////////
+// These settings are probably best left alone.
+
+%break-words {
+  word-break: break-all;
+  hyphens: auto;
+}
