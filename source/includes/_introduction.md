@@ -22,10 +22,11 @@ and you can switch the programming language of the examples with the tabs in the
 
 <strong>Available all other assets pairs:</strong>
 
-- USD
-- EUR
-- CNY
-- GOLD
-- SILVER
+- <a href="https://ex.xbts.io/#/market/USD_BTS">USD</a>
+- <a href="https://ex.xbts.io/#/market/EUR_BTS">EUR</a>
+- <a href="https://ex.xbts.io/#/market/CNY_BTS">CNY</a>
+- <a href="https://ex.xbts.io/#/market/GOLD_BTS">GOLD</a>
+- <a href="https://ex.xbts.io/#/market/SILVER_BTS">SILVER</a>
+- <a href="https://ex.xbts.io/#/market/RUBLE_BTS">RUBLE</a>
 
 etc etc...
