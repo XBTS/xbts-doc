@@ -8,3 +8,22 @@ and you can switch the programming language of the examples with the tabs in the
 
 
 <strong>All information is broadcasted from the blockchain and can not be forged!</strong>
+
+Available assets pairs XBTS:
+- BTS
+- STH
+- POST
+- DOGE
+- BTC
+- LTC
+- DASH
+- KEC
+
+Available all other assets pairs:
+- USD
+- EUR
+- CNY
+- GOLD
+- SILVER
+
+etc etc...
