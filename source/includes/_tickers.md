@@ -10,15 +10,17 @@ https://public.xbts.io/ticker/BTS_STH
 ```json
 {
   "BTS_STH": {
-    "time": "2018-07-26T20:54:30",
+    "time": "2018-07-27T00:47:30",
     "base": "BTS",
     "quote": "STH",
-    "latest": "0.01862000",
-    "lowest_ask": "0.01860000",
-    "highest_bid": "0.01615782",
-    "percent_change": "-4.31",
-    "base_volume": "1554.69051",
-    "quote_volume": "83492.478995"
+    "latest": "0.01859723",
+    "lowest_ask": "0.01859723",
+    "highest_bid": "0.01603262",
+    "percent_change": "-4.47",
+    "base_volume": "12057.0034",
+    "quote_volume": "648880.609272",
+    "logo_base": "https://ex.xbts.io/asset-symbols/bts.png",
+    "logo_quote": "https://ex.xbts.io/asset-symbols/xbtsx.sth.png"
   }
 }
 ```
