@@ -114,6 +114,17 @@ https://public.xbts.io/tickers
 
 <strong>Default base ticker BTS</strong>
 
+But there may be others:
+
+- <a href="https://public.xbts.io/tickers?coin=RUBLE">RUBLE</a>
+- <a href="https://public.xbts.io/tickers?coin=USD">USD</a>
+- <a href="https://public.xbts.io/tickers?coin=EUR">EUR</a>
+- <a href="https://public.xbts.io/tickers?coin=CNY">CNY</a>
+- <a href="https://public.xbts.io/tickers?coin=GOLD">GOLD</a>
+- <a href="https://public.xbts.io/tickers?coin=SILVER">SILVER</a>
+
+etc..
+
 ## Get Custom Base Tickers
 ```shell
 https://public.xbts.io/tickers?coin=BTC
