@@ -10,7 +10,7 @@ toc_footers:
   - <a href='http://cryptofresh.com'>BlockExplorer</a>
   - <a href='https://t.me/xbtsio'>Community</a>
   - <a href='https://github.com/XBTS/docs-public-api'>GitHub</a>
-  - <a href='https://github.com/XBTS/xbts-ui/releases/latest'>Get Desktop DEX App</a>
+  - <a href='https://github.com/XBTS/xbts-ui/releases/latest'>Get Latest Desktop DEX App</a>
   - <a href='https://smartholdem.io'>Powered By SmartHoldem Team</a>
 
 

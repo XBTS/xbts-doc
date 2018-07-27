@@ -9,17 +9,19 @@ and you can switch the programming language of the examples with the tabs in the
 
 <strong>All information is broadcasted from the blockchain and can not be forged!</strong>
 
-Available assets pairs XBTS:
+<strong>Available assets pairs XBTS:</strong>
+
 - BTS
-- STH
-- POST
-- DOGE
-- BTC
-- LTC
+- <a href="https://ex.xbts.io/#/market/XBTSX.STH_BTS">STH</a>
+- <a href="https://ex.xbts.io/#/market/XBTSX.POST_XBTSX.BTC">POST</a>
+- <a href="https://ex.xbts.io/#/market/XBTSX.DOGE_XBTSX.BTC">DOGE</a>
+- <a href="https://ex.xbts.io/#/market/XBTSX.BTC_BTS">BTC</a>
+- <a href="https://ex.xbts.io/#/market/XBTSX.LTC_XBTSX.BTC">LTC</a>
 - DASH
 - KEC
 
-Available all other assets pairs:
+<strong>Available all other assets pairs:</strong>
+
 - USD
 - EUR
 - CNY
