@@ -174,4 +174,5 @@ https://public.xbts.io/tickers?coin=BTC
 
 `https://public.xbts.io/tickers?coin=<BASE_COIN>`
 
-<strong>Default base ticker BTS</strong>
+<strong>Default base ticker BTS</strong>.
+But there may be others.
