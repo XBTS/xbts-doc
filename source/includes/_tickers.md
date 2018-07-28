@@ -118,6 +118,7 @@ https://public.xbts.io/tickers
 
 But there may be others:
 
+- <a href="https://public.xbts.io/tickers?base=BTC">BTC</a>
 - <a href="https://public.xbts.io/tickers?base=RUBLE">RUBLE</a>
 - <a href="https://public.xbts.io/tickers?base=USD">USD</a>
 - <a href="https://public.xbts.io/tickers?base=EUR">EUR</a>
