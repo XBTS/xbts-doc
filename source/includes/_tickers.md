@@ -118,18 +118,18 @@ https://public.xbts.io/tickers
 
 But there may be others:
 
-- <a href="https://public.xbts.io/tickers?coin=RUBLE">RUBLE</a>
-- <a href="https://public.xbts.io/tickers?coin=USD">USD</a>
-- <a href="https://public.xbts.io/tickers?coin=EUR">EUR</a>
-- <a href="https://public.xbts.io/tickers?coin=CNY">CNY</a>
-- <a href="https://public.xbts.io/tickers?coin=GOLD">GOLD</a>
-- <a href="https://public.xbts.io/tickers?coin=SILVER">SILVER</a>
+- <a href="https://public.xbts.io/tickers?base=RUBLE">RUBLE</a>
+- <a href="https://public.xbts.io/tickers?base=USD">USD</a>
+- <a href="https://public.xbts.io/tickers?base=EUR">EUR</a>
+- <a href="https://public.xbts.io/tickers?base=CNY">CNY</a>
+- <a href="https://public.xbts.io/tickers?base=GOLD">GOLD</a>
+- <a href="https://public.xbts.io/tickers?base=SILVER">SILVER</a>
 
 etc..
 
 ## Get Custom Base Tickers
 ```shell
-https://public.xbts.io/tickers?coin=BTC
+https://public.xbts.io/tickers?base=BTC
 ```
 > The above command returns JSON structured like this:
 
@@ -172,7 +172,7 @@ https://public.xbts.io/tickers?coin=BTC
 }
 ```
 
-`https://public.xbts.io/tickers?coin=<BASE_COIN>`
+`https://public.xbts.io/tickers?base=<BASE_COIN>`
 
 <strong>Default base ticker BTS</strong>.
 But there may be others.
