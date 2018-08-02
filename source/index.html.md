@@ -17,6 +17,7 @@ toc_footers:
 includes:
   - introduction
   - tickers
+  - info
 
 search: true
 ---
