@@ -18,6 +18,7 @@ includes:
   - introduction
   - tickers
   - info
+  - history
 
 search: true
 ---
