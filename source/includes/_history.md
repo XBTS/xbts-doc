@@ -1,4 +1,10 @@
-# History by Days
+#Trade History
+
+`GET https://public.xbts.io/history/<STEP>/<QUOTE_COIN>/<BASE_COIN>/<LIMIT>/<ToTimeStamp>`
+
+STEP = day or hour
+
+## History by Days
 
 ```shell
 https://public.xbts.io/history/day/STH/BTS/7/1534293135
@@ -57,7 +63,7 @@ Support XBTSX coins:
 - LTC
 ...
 
-# History by Hours
+## History by Hours
 
 ```shell
 https://public.xbts.io/history/hour/STH/BTS/24/1534293135
