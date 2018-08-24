@@ -60,4 +60,4 @@ https://public.xbts.io/account/getbalance/xbtsx
 
 `GET https://public.xbts.io/account/getbalance/<AccountName>`
 
-Return JSON information about history coin by days.
+Return JSON information about all assets balances by account name.
