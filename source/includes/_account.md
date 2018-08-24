@@ -1,5 +1,7 @@
 # Account
 
+accounts information
+
 ## Get Account Balances
 
 ```shell
