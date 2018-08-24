@@ -19,6 +19,7 @@ includes:
   - tickers
   - info
   - history
+  - account
 
 search: true
 ---
