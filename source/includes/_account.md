@@ -30,10 +30,4 @@ https://public.xbts.io/account/getbalance/xbtsx
 
 Return JSON information about all assets balances by account name.
 
-if not found account, return error:
-
-```
-{
-  "err": true
-}
-```
+if not found account, return null:
