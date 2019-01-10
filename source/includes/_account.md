@@ -1,6 +1,8 @@
 # Account
 
-accounts information
+<strong>Information about accounts is public and is provided by the blockchain.</strong>
+
+Displays balances that are not in orders
 
 ## Get Account Balances
 
