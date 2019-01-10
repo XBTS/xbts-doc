@@ -19,9 +19,9 @@ includes:
   - introduction
   - assets
   - tickers
-  - info
   - history
   - account
+  - info
 
 search: true
 ---
