@@ -1,180 +1,183 @@
 # Tickers
 
-## Get Single Ticker
+You can get a list of XBTS tickers in any direction: sth_bts,sth_btc,sth_ruble,onion_egc
+
+lowercase and uppercase tickers are supported: sth_bts,STH_BTC
+
+## Get Single Ticker Pair
 
 ```shell
-https://public.xbts.io/ticker/BTS_STH
+https://public.xbts.io/ticker/sth_bts
 ```
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "BTS_STH": {
-    "time": "2018-07-27T00:47:30",
-    "base": "BTS",
-    "quote": "STH",
-    "latest": "0.01859723",
-    "lowest_ask": "0.01859723",
-    "highest_bid": "0.01603262",
-    "percent_change": "-4.47",
-    "base_volume": "12057.0034",
-    "quote_volume": "648880.609272",
-    "logo_base": "https://ex.xbts.io/asset-symbols/bts.png",
-    "logo_quote": "https://ex.xbts.io/asset-symbols/xbtsx.sth.png"
+  "STH_BTS": {
+    "high": "0.00726",
+    "low": "0.006764",
+    "avg": "0.00701",
+    "vol": "2440.94632",
+    "vol_cur": "342373.964876",
+    "last": "0.00678",
+    "buy": "0.00676",
+    "sell": "0.00718",
+    "percent_change": "-5.96",
+    "updated": 1547125050
   }
 }
 ```
 
-`GET https://public.xbts.io/ticker/<ticker_pair>`
+all data comes from the blockchain and can be checked
+
+`GET https://public.xbts.io/ticker/sth_btc`
 
 Return JSON.
 
-## Get Custom Tickers
+- <strong>high</strong>: maximal price
+- <strong>low</strong>: minimal price
+- <strong>avg</strong>: average price
+- <strong>vol</strong>: traded volume latest 24 hours
+- <strong>vol_cur</strong>: traded volume in currency latest 24 hours
+- <strong>last</strong>: last transaction price
+- <strong>buy</strong>: buying price
+- <strong>sell</strong>: selling price
+- <strong>percent_change</strong>: percent change
+- <strong>updated</strong>: last update from blockchain, GMT UTC:00
+
+## Get Multi Tickers
+
+list pairs separated by commas, without spaces
 
 ```shell
-https://public.xbts.io/ticker/BTS_STH,BTS_BTC
+https://api.xbts.io/api/ticker/sth_bts,sth_waves,bts_btc,btc_ruble,nvc_btc
 ```
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "BTS_STH": {
-    "time": "2018-07-26T21:03:42",
-    "base": "BTS",
-    "quote": "STH",
-    "latest": "0.01862000",
-    "lowest_ask": "0.01860000",
-    "highest_bid": "0.01615782",
-    "percent_change": "-4.31",
-    "base_volume": "1554.69051",
-    "quote_volume": "83492.478995"
+  "STH_BTS": {
+    "high": "0.00726",
+    "low": "0.006764",
+    "avg": "0.00701",
+    "vol": "2440.94632",
+    "vol_cur": "342373.964876",
+    "last": "0.00678",
+    "buy": "0.00676",
+    "sell": "0.00718",
+    "percent_change": "-5.96",
+    "updated": 1547125359
   },
-  "BTS_CNY": {
-    "time": "2018-07-26T21:03:42",
-    "base": "BTS",
-    "quote": "CNY",
-    "latest": "0.71681813",
-    "lowest_ask": "0.71692375",
-    "highest_bid": "0.71684642",
-    "percent_change": "1.15",
-    "base_volume": "11306693.30177",
-    "quote_volume": "16018329.0389"
-  }
+  "BTS_BTC": {
+    "high": "0.00001001",
+    "low": "0.0000119",
+    "avg": "0.00001095",
+    "vol": "0.00510795",
+    "vol_cur": "433.0283",
+    "last": "0.00001011",
+    "buy": "0.00001011",
+    "sell": "0.00001189",
+    "percent_change": "-15.07",
+    "updated": 1547125359
+  },
+  "BTC_RUBLE": {
+    "high": "273075.9148",
+    "low": "273075.9148",
+    "avg": "273075.9148",
+    "vol": "0",
+    "vol_cur": "0",
+    "last": "273075.9148",
+    "buy": "273075.9148",
+    "sell": "300000",
+    "percent_change": "0",
+    "updated": 1547125359
+  },
+  ...
 }
 ```
 
-`GET https://public.xbts.io/ticker/<ticker_pair1>,<ticker_pair2>,<ticker_pairN>`
+`GET https://api.xbts.io/api/ticker/sth_bts,sth_waves,bts_btc,btc_ruble,nvc_btc`
 
 <strong>List the pairs by separating them with commas</strong>
 
-## Get All XBTS Tickers
+Return JSON
+
+- <strong>high</strong>: maximal price
+- <strong>low</strong>: minimal price
+- <strong>avg</strong>: average price
+- <strong>vol</strong>: traded volume latest 24 hours
+- <strong>vol_cur</strong>: traded volume in currency latest 24 hours
+- <strong>last</strong>: last transaction price
+- <strong>buy</strong>: buying price
+- <strong>sell</strong>: selling price
+- <strong>percent_change</strong>: percent change
+- <strong>updated</strong>: last update from blockchain, GMT UTC:00
+
+## Liquid Pairs by Ticker
+
 ```shell
-https://public.xbts.io/tickers
+https://api.xbts.io/api/liquid/sth
 ```
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "BTS_STH": {
-    "time": "2018-07-26T21:05:21",
-    "base": "BTS",
-    "quote": "STH",
-    "latest": "0.01862000",
-    "lowest_ask": "0.01860000",
-    "highest_bid": "0.01615782",
-    "percent_change": "-4.31",
-    "base_volume": "1554.69051",
-    "quote_volume": "83492.478995"
+  "pairs": {
+...
+    "STH_BTS": {
+      "high": "0.00726",
+      "low": "0.006764",
+      "avg": "0.00701",
+      "vol": "2559.83066",
+      "vol_cur": "358982.717585",
+      "last": "0.00717",
+      "buy": "0.00676",
+      "sell": "0.00718",
+      "percent_change": "-0.55",
+      "updated": 1547126883
+    },
+    "STH_BTC": {
+      "high": "0.00000006",
+      "low": "0.00000008",
+      "avg": "0.00000007",
+      "vol": "0.00046462",
+      "vol_cur": "6738.041932",
+      "last": "0.00000006",
+      "buy": "0.00000005",
+      "sell": "0.00000006",
+      "percent_change": "-24.99",
+      "updated": 1547126883
+    },
+    "STH_ONION": {
+      "high": "0.00076923",
+      "low": "0.00076923",
+      "avg": "0.00076923",
+      "vol": "8.63261094",
+      "vol_cur": "11222.394222",
+      "last": "0.00076923",
+      "buy": "0.00076923",
+      "sell": "0.00125",
+      "percent_change": "15.38",
+      "updated": 1547126883
+    },
+    "STH_ETH": {
+      "high": "0.0000019",
+      "low": "0.0000025",
+      "avg": "0.0000022",
+      "vol": "0.0011181",
+      "vol_cur": "525.314441",
+      "last": "0.0000025",
+      "buy": "0.000002",
+      "sell": "0.000003",
+      "percent_change": "28.2",
+      "updated": 1547126883
+    },
+    ...
   },
-  "BTS_POST": {
-    "time": "2018-07-26T21:05:21",
-    "base": "BTS",
-    "quote": "POST",
-    "latest": "0.06500000",
-    "lowest_ask": "0.11999987",
-    "highest_bid": "0.06500000",
-    "percent_change": "0",
-    "base_volume": "0",
-    "quote_volume": "0"
-  },
-  "BTS_DOGE": {
-    "time": "2018-07-26T21:05:21",
-    "base": "BTS",
-    "quote": "DOGE",
-    "latest": "0.00874400",
-    "lowest_ask": "0.00000000",
-    "highest_bid": "0.00000000",
-    "percent_change": "0",
-    "base_volume": "0",
-    "quote_volume": "0"
-  },
-  ....
+  "count": 15
 }
 ```
 
-`https://public.xbts.io/tickers`
+`https://api.xbts.io/api/liquid/sth`
 
-<strong>Default base ticker BTS</strong>
-
-But there may be others:
-
-- <a href="https://public.xbts.io/tickers?base=BTC">BTC</a>
-- <a href="https://public.xbts.io/tickers?base=STH">STH</a>
-- <a href="https://public.xbts.io/tickers?base=RUBLE">RUBLE</a>
-- <a href="https://public.xbts.io/tickers?base=USD">USD</a>
-- <a href="https://public.xbts.io/tickers?base=EUR">EUR</a>
-- <a href="https://public.xbts.io/tickers?base=CNY">CNY</a>
-- <a href="https://public.xbts.io/tickers?base=GOLD">GOLD</a>
-- <a href="https://public.xbts.io/tickers?base=SILVER">SILVER</a>
-
-etc..
-
-## Get Custom Base Tickers
-```shell
-https://public.xbts.io/tickers?base=BTC
-```
-> The above command returns JSON structured like this:
-
-```json
-{
-  "BTC_STH": {
-    "time": "2018-07-26T21:09:27",
-    "base": "BTC",
-    "quote": "STH",
-    "latest": "0.00000050",
-    "lowest_ask": "0.00000050",
-    "highest_bid": "0.00000042",
-    "percent_change": "0.35",
-    "base_volume": "0.04553569",
-    "quote_volume": "98815.095234"
-  },
-  "BTC_POST": {
-    "time": "2018-07-26T21:09:27",
-    "base": "BTC",
-    "quote": "POST",
-    "latest": "0.00000198",
-    "lowest_ask": "0.00000205",
-    "highest_bid": "0.00000170",
-    "percent_change": "-3.41",
-    "base_volume": "0.03290543",
-    "quote_volume": "16515.795701"
-  },
-  "BTC_DOGE": {
-    "time": "2018-07-26T21:09:27",
-    "base": "BTC",
-    "quote": "DOGE",
-    "latest": "0.00000042",
-    "lowest_ask": "0.00000046",
-    "highest_bid": "0.00000042",
-    "percent_change": "0",
-    "base_volume": "0.00254446",
-    "quote_volume": "6058.26082"
-  },
-  ....
-}
-```
-
-`https://public.xbts.io/tickers?base=<BASE_COIN>`
-
-<strong>Default base ticker BTS</strong>.
-But there may be others.
+<strong>Returns a list of all pairs that were traded for the specified ticker in the last 24 hours</strong>
