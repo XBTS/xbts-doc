@@ -17,6 +17,7 @@ toc_footers:
 
 includes:
   - introduction
+  - assets
   - tickers
   - info
   - history
