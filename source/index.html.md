@@ -6,8 +6,9 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 
 toc_footers:
-  - <a href='https://ex.xbts.io/?r=xbtsx'>XBTS DEX</a>
-  - <a href='http://cryptofresh.com'>BlockExplorer</a>
+  - <a href='https://ex.xbts.io/?r=xbtsx'>XBTS DEX Web</a>
+  - <a href='http://cryptofresh.com'>BlockExplorer-1</a>
+  - <a href='http://bitshares-explorer.io/#/dashboard'>BlockExplorer-2</a>
   - <a href='https://t.me/xbtsio'>Community</a>
   - <a href='https://github.com/XBTS/docs-public-api'>GitHub</a>
   - <a href='https://github.com/XBTS/xbts-ui/releases/latest'>Get Latest Desktop DEX App</a>
