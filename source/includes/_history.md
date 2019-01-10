@@ -1,124 +1,123 @@
-#Trade History
+# Market History
 
-`GET https://public.xbts.io/history/<STEP>/<QUOTE_COIN>/<BASE_COIN>/<LIMIT>/<ToTimeStamp>`
+Get trades history of selected pair
 
-STEP = day or hour
+`GET https://api.xbts.io/api/history/market/sth_bts/90/days`
+
+are supported period: days or hours up to 365
 
 ## History by Days
 
 ```shell
-https://public.xbts.io/history/day/STH/BTS/7/1534293135
+https://api.xbts.io/api/history/market/sth_bts/3/days
 ```
-> The above command returns JSON Trade History 7 days (week) / Step 1 day:
+
+> The above command returns JSON Market History latest 3 days:
 
 ```json
-
-  "Response": "Success",
-  "Data": [
-    {
-      "time": 1533765600,
-      "humanTime": "2018-08-09T00:00:00",
-      "high": "0.03200",
-      "low": "0.02002",
-      "open": "0.02500",
-      "volumefrom": "204872.71448",
-      "volumeto": "5769.16014",
-      "close": "0.029613"
-    },
-    {
-      "time": 1533852000,
-      "humanTime": "2018-08-10T00:00:00",
-      "high": "0.02961",
-      "low": "0.02164",
-      "open": "0.02960",
-      "volumefrom": "169364.04439",
-      "volumeto": "4110.76956",
-      "close": "0.028679"
-    },
- .....
-    {
-      "time": 1534284000,
-      "humanTime": "2018-08-15T00:00:00",
-      "high": "0.03601",
-      "low": "0.03601",
-      "open": "0.03601",
-      "volumefrom": "8.19994",
-      "volumeto": "0.29532",
-      "close": "0.036015"
-    }
-  ],
-  "TimeTo": "1534293135"
-}
+[
+  {
+    "timeutc": "2019-01-08T00:00:00",
+    "time": 1546894800,
+    "open": "0.00724",
+    "high": "0.00727",
+    "low": "0.00678",
+    "close": "0.00725",
+    "vol": "2516.64974",
+    "vol_cur": "348502.484273",
+    "avg": "0.007025"
+  },
+  {
+    "timeutc": "2019-01-09T00:00:00",
+    "time": 1546981200,
+    "open": "0.00722",
+    "high": "0.00724",
+    "low": "0.00677",
+    "close": "0.00715",
+    "vol": "2527.84542",
+    "vol_cur": "352046.713053",
+    "avg": "0.007005"
+  },
+  {
+    "timeutc": "2019-01-10T00:00:00",
+    "time": 1547067600,
+    "open": "0.00714",
+    "high": "0.00726",
+    "low": "0.00676",
+    "close": "0.00677",
+    "vol": "2079.88220",
+    "vol_cur": "291781.101463",
+    "avg": "0.007010"
+  }
+]
 ```
 
-`GET https://public.xbts.io/history/day/<QUOTE_COIN>/<BASE_COIN>/<LIMIT>/<ToTimeStamp>`
+`GET https://api.xbts.io/api/history/market/sth_bts/14/days`
 
-Return JSON information about history coin by days.
+Return JSON information about market history coin by days.
 
-Support XBTSX coins:
+- <strong>timeutc</strong>: human time in GMT UTC:00
+- <strong>time</strong>: server unix timestamp
+- <strong>high</strong>: maximal price
+- <strong>low</strong>: minimal price
+- <strong>close</strong>: close price
+- <strong>vol</strong>: traded volume
+- <strong>vol_cur</strong>: traded volume in currency
+- <strong>avg</strong>: average price
 
-- STH
-- BTC
-- DOGE
-- LTC
 ...
 
 ## History by Hours
 
 ```shell
-https://public.xbts.io/history/hour/STH/BTS/24/1534293135
+https://api.xbts.io/api/history/market/sth_bts/4/hours
 ```
-> The above command returns JSON Trade History 24 Hours/ Step 1 hour:
+> The above command returns JSON Market History Ticker by 4 Hours:
 
 ```json
-
-  "Response": "Success",
-  "Data": [
-{
-      "time": 1534201200,
-      "humanTime": "2018-08-14T01:00:00",
-      "high": "0.03990",
-      "low": "0.03890",
-      "open": "0.03890",
-      "volumefrom": "9399.29474",
-      "volumeto": "370.77409",
-      "close": "0.039900"
-    },
-    {
-      "time": 1534204800,
-      "humanTime": "2018-08-14T02:00:00",
-      "high": "0.03747",
-      "low": "0.02645",
-      "open": "0.03523",
-      "volumefrom": "41691.57997",
-      "volumeto": "1291.86200",
-      "close": "0.030088"
-    },
-   .........
-    {
-      "time": 1534284000,
-      "humanTime": "2018-08-15T00:00:00",
-      "high": "0.03601",
-      "low": "0.03601",
-      "open": "0.03601",
-      "volumefrom": "8.19994",
-      "volumeto": "0.29532",
-      "close": "0.036015"
-    }
-  ],
-  "TimeTo": "1534293135"
-}
+[
+  {
+    "timeHuman": "2019-01-10T12:00:00",
+    "timeServer": 1547118000,
+    "open": "0.00717",
+    "high": "0.00726",
+    "low": "0.00676",
+    "close": "0.00726",
+    "vol": "534.15226",
+    "vol_cur": "75071.409549",
+    "avg": "0.007010"
+  },
+  {
+    "timeHuman": "2019-01-10T13:00:00",
+    "timeServer": 1547121600,
+    "open": "0.00678",
+    "high": "0.00718",
+    "low": "0.00678",
+    "close": "0.00678",
+    "vol": "33.35672",
+    "vol_cur": "4914.056362",
+    "avg": "0.006980"
+  },
+  {
+    "timeHuman": "2019-01-10T14:00:00",
+    "timeServer": 1547125200,
+    "open": "0.00676",
+    "high": "0.00717",
+    "low": "0.00676",
+    "close": "0.00677",
+    "vol": "130.47445",
+    "vol_cur": "18320.734509",
+    "avg": "0.006965"
+  }
+]
 ```
 
-`GET https://public.xbts.io/history/hour/<QUOTE_COIN>/<BASE_COIN>/<LIMIT>/<ToTimeStamp>`
+`GET https://api.xbts.io/api/history/market/sth_bts/4/hours`
 
-Return JSON information about history coin by hours.
+Return JSON information about market history coin by hours.
 
-Support XBTSX coins:
+<aside class="info">
+if trade did not occur for a period of time, then it is not displayed
+</aside>
 
-- STH
-- BTC
-- DOGE
-- LTC
-...
 
