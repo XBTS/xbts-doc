@@ -1,6 +1,6 @@
 # Tickers
 
-You can get a list of XBTS tickers in any direction: sth_bts,sth_btc,sth_ruble,onion_egc
+<strong>You can get a list of XBTS tickers in any direction:</strong> sth_bts,sth_btc,sth_ruble,onion_egc
 
 lowercase and uppercase tickers are supported: sth_bts,STH_BTC
 
@@ -28,7 +28,7 @@ https://public.xbts.io/ticker/sth_bts
 }
 ```
 
-all data comes from the blockchain and can be checked
+<strong>Get current ticker information from blockchain</strong>
 
 `GET https://public.xbts.io/ticker/sth_btc`
 
@@ -47,7 +47,7 @@ Return JSON.
 
 ## Get Multi Tickers
 
-list pairs separated by commas, without spaces
+<strong>List pairs separated by commas, without spaces</strong>
 
 ```shell
 https://api.xbts.io/api/ticker/sth_bts,sth_waves,bts_btc,btc_ruble,nvc_btc
@@ -97,8 +97,6 @@ https://api.xbts.io/api/ticker/sth_bts,sth_waves,bts_btc,btc_ruble,nvc_btc
 ```
 
 `GET https://api.xbts.io/api/ticker/sth_bts,sth_waves,bts_btc,btc_ruble,nvc_btc`
-
-<strong>List the pairs by separating them with commas</strong>
 
 Return JSON
 
@@ -177,6 +175,8 @@ https://api.xbts.io/api/liquid/sth
   "count": 15
 }
 ```
+
+<strong>Get current information about liquid ticker pairs from blockchain</strong>
 
 `https://api.xbts.io/api/liquid/sth`
 
