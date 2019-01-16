@@ -181,3 +181,72 @@ https://api.xbts.io/api/liquid/sth
 `https://api.xbts.io/api/liquid/sth`
 
 <strong>Returns a list of all pairs that were traded for the specified ticker in the last 24 hours</strong>
+
+## Market 24h Tickers
+
+```shell
+https://api.xbts.io/api/market24
+```
+> The above command returns JSON structured like this:
+
+```json
+{
+  "pairs": {
+...
+     "STH_BTS": {
+      "high": "0.00692",
+      "low": "0.00689",
+      "avg": "0.0069",
+      "vol": "2510.44111",
+      "vol_cur": "365535.024925",
+      "last": "0.00692",
+      "buy": "0.00688",
+      "sell": "0.00692",
+      "percent_change": "-1.56",
+      "updated": 1547589057
+    },
+    "BTC_BTS": {
+      "high": "94786.72982",
+      "low": "94786.72982",
+      "avg": "94786.72982",
+      "vol": "1278.91165",
+      "vol_cur": "0.01351127",
+      "last": "94786.72982",
+      "buy": "84000.084",
+      "sell": "94786.72982",
+      "percent_change": "12.84",
+      "updated": 1547589057
+    },
+    "WAVES_BTS": {
+      "high": "72.5",
+      "low": "72.5",
+      "avg": "72.5",
+      "vol": "0.07242",
+      "vol_cur": "0.0009989",
+      "last": "72.5",
+      "buy": "72.5",
+      "sell": "75",
+      "percent_change": "0",
+      "updated": 1547589057
+    }
+  },
+  "count": 15
+}
+```
+
+<strong>Get information about liquid market pairs in 24 hours</strong>
+
+`https://api.xbts.io/api/market24`
+
+- <strong>high</strong>: maximal price
+- <strong>low</strong>: minimal price
+- <strong>avg</strong>: average price
+- <strong>vol</strong>: traded volume latest 24 hours
+- <strong>vol_cur</strong>: traded volume in currency latest 24 hours
+- <strong>last</strong>: last transaction price
+- <strong>buy</strong>: buying price
+- <strong>sell</strong>: selling price
+- <strong>percent_change</strong>: percent change
+- <strong>updated</strong>: last update from blockchain, GMT UTC:00
+
+<strong>Returns a list of all pairs that were traded on market in the last 24 hours</strong>
