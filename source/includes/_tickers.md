@@ -235,15 +235,15 @@ https://api.xbts.io/api/market24
 
 `https://api.xbts.io/api/market24`
 
-- <strong>high</strong>: maximal price
-- <strong>low</strong>: minimal price
-- <strong>avg</strong>: average price
+- <strong>high</strong>: maximal price 24h
+- <strong>low</strong>: minimal price 24h
+- <strong>avg</strong>: average price 24h
 - <strong>vol</strong>: traded volume latest 24 hours
 - <strong>vol_cur</strong>: traded volume in currency latest 24 hours
 - <strong>last</strong>: last transaction price
-- <strong>buy</strong>: buying price
-- <strong>sell</strong>: selling price
-- <strong>percent_change</strong>: percent change
+- <strong>buy</strong>: current buying price
+- <strong>sell</strong>: current selling price
+- <strong>percent_change</strong>: percent change 24h
 - <strong>updated</strong>: last update from blockchain, GMT UTC:00
 
 <strong>Returns a list of all pairs that were traded on market in the last 24 hours</strong>
