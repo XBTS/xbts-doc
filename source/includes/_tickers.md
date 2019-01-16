@@ -191,7 +191,6 @@ https://api.xbts.io/api/market24
 
 ```json
 {
-  "pairs": {
 ...
      "STH_BTS": {
       "high": "0.00692",
@@ -229,8 +228,6 @@ https://api.xbts.io/api/market24
       "percent_change": "0",
       "updated": 1547589057
     }
-  },
-  "count": 15
 }
 ```
 
