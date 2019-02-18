@@ -66,3 +66,11 @@ https://api.xbts.io/api/assets
 - <strong>prefix</strong>: internal asset prefix in blockchain, example for XBTS exchange https://ex.xbts.io/#/asset/XBTSX.BTC
 
 Return JSON information about all XBTS assets.
+
+
+
+# BitShares Assets
+
+Get a list of smart assets (market pegged assets) and UIA (User Issued Assets) included on the XBTS
+
+`GET https://api.xbts.io/api/bitsharesassets`
