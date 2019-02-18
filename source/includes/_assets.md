@@ -73,4 +73,32 @@ Return JSON information about all XBTS assets.
 
 Get a list of smart assets (market pegged assets) and UIA (User Issued Assets) included on the XBTS
 
+```json
+{
+  "BTS": {
+    "id": "1.3.0",
+    "precision": 5,
+    "disable": false,
+    "url": "https://ex.xbts.io/#/asset/BTS"
+  },
+  "RUBLE": {
+    "id": "1.3.1325",
+    "precision": 5,
+    "disable": false,
+    "url": "https://ex.xbts.io/#/asset/RUBLE"
+  },
+  "USD": {
+    "id": "1.3.121",
+    "precision": 4,
+    "disable": false,
+    "url": "https://ex.xbts.io/#/asset/USD"
+  },
+  "CNY": {
+    "id": "1.3.113",
+    "precision": 4,
+    "disable": false,
+    "url": "https://ex.xbts.io/#/asset/CNY"
+  },
+```
+
 `GET https://api.xbts.io/api/bitsharesassets`
